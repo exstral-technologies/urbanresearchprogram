@@ -5,6 +5,8 @@ import Home from './HOCs/Home';
 import Support from './HOCs/Support';
 import Contact from './HOCs/Contact';
 
+//css
+import './scss/main.css';
 //initialize tap-event
 var injectTapEventPlugin = require("react-tap-event-plugin");
 injectTapEventPlugin();

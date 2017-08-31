@@ -7,11 +7,209 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+SC");
 @import url("https://fonts.googleapis.com/css?family=Cormorant");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+.hmbg-menu {
+  position: relative;
+  z-index: 10; }
+
+.hamburger1 {
+  background: inherit;
+  width: 80px;
+  padding: 12px;
+  float: left;
+  margin: 0px 30px;
+  cursor: pointer;
+  border: none;
+  position: absolute; }
+
+.hamburger1 div {
+  height: 5px;
+  background: #fff;
+  width: 45px;
+  margin: 5px 0px;
+  transition: all 0.5s; }
+
+.hamburger1 div {
+  height: 5px;
+  background: #fff;
+  width: 45px;
+  margin: 5px 0px;
+  transition: all 0.5s; }
+
+.hamburger1:hover div:nth-child(1) {
+  width: 20px;
+  transition: all 0.5s; }
+
+.hamburger1:hover div:nth-child(2) {
+  width: 35px;
+  transition: all 0.5s; }
+
+.hamburger1:hover div:nth-child(3) {
+  width: 45px;
+  transition: all 0.5s; }
+
+.hamburger1:hover div:nth-child(4) {
+  width: 55px;
+  transition: all 0.5s; }
+
+.banner-btn {
+  z-index: 5;
+  position: relative;
+  background: transparent;
+  border: 1px solid #fff;
+  margin: 0; }
+
+.banner-btn:hover, .banner-btn:focus, .banner-btn:active {
+  background: #0bac8b;
+  border: 1px solid #474545;
+  transition: background 0.5s cubic-bezier(0.39, 0.58, 0.57, 1), border 0.5s ease-in;
+  transition-property: background, border;
+  transition-duration: 0.5s, 0.5s;
+  transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1), ease-in;
+  transition-delay: initial, initial; }
+  .banner-btn:hover span, .banner-btn:focus span, .banner-btn:active span {
+    color: #fff; }
+
+.banner-btn span {
+  width: 130px;
+  height: 38px;
+  font-size: 11px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 30px;
+  background: transparent;
+  color: #fff;
+  font-family: "Open Sans";
+  line-height: 350%;
+  text-align: center; }
+
+.demo > div {
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font: normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+  padding-top: -3em; }
+
+.demo div:hover {
+  opacity: .5; }
+
+#section04 div span {
+  position: absolute;
+  top: -2.5em;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box; }
+
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0); }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px); }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0); } }
+
+@keyframes sdb04 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0); }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px); }
+  40% {
+    transform: rotate(-45deg) translate(0, 0); } }
+
 /*Home Page*/
 /* Large desktop */
 /* Portrait tablet to landscape and desktop */
 /* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 767px) {
+  .jumbo p {
+    width: 60%;
+    margin: 60% auto 0 auto; }
+  .jumbo .jumbo-btn {
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 2em; } }
+
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .jumbo p {
+    width: 60%;
+    margin: 0 auto 0 auto;
+    padding-top: 10.5em; }
+  .jumbo .jumbo-btn {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 1em; }
+  .jumbo .jumbo-scroll {
+    width: 15%;
+    height: 4em;
+    margin: 0 auto; }
+  .hiw {
+    width: 100%;
+    height: 800px; }
+    .hiw h3 {
+      margin: 3em auto 0 auto;
+      width: 80%;
+      text-align: left;
+      font-family: Tahoma, Verdana, Segoe, sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      size: 17px;
+      line-height: 31px;
+      color: #444444; }
+    .hiw .hiw-img {
+      width: 80%;
+      margin: 0 auto; }
+    .hiw img {
+      width: 250px;
+      height: 250px;
+      margin-top: 1em; } }
+
+.jumbo {
+  width: 100%;
+  height: 29.5em;
+  top: 0;
+  left: 0;
+  background-image: url("http://cdn.wallpapersafari.com/18/13/MXJmHe.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #464646; }
+  .jumbo:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 29.5em;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .6; }
+  .jumbo p {
+    position: relative;
+    z-index: 8;
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.5em; }
+
 /*Support Page*/
 /* Large desktop */
 /* Portrait tablet to landscape and desktop */

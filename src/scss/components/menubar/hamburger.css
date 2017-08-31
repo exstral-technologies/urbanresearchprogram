@@ -1,0 +1,43 @@
+.hmbg-menu {
+  position: relative;
+  z-index: 10; }
+
+.hamburger1 {
+  background: inherit;
+  width: 80px;
+  padding: 12px;
+  float: left;
+  margin: 0px 30px;
+  cursor: pointer;
+  border: none;
+  position: absolute; }
+
+.hamburger1 div {
+  height: 5px;
+  background: #fff;
+  width: 45px;
+  margin: 5px 0px;
+  transition: all 0.5s; }
+
+.hamburger1 div {
+  height: 5px;
+  background: #fff;
+  width: 45px;
+  margin: 5px 0px;
+  transition: all 0.5s; }
+
+.hamburger1:hover div:nth-child(1) {
+  width: 20px;
+  transition: all 0.5s; }
+
+.hamburger1:hover div:nth-child(2) {
+  width: 35px;
+  transition: all 0.5s; }
+
+.hamburger1:hover div:nth-child(3) {
+  width: 45px;
+  transition: all 0.5s; }
+
+.hamburger1:hover div:nth-child(4) {
+  width: 55px;
+  transition: all 0.5s; }

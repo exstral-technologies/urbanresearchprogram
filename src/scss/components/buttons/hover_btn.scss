@@ -1,0 +1,38 @@
+$gcolor:rgba(11,172,139, 1.0);
+
+.banner-btn{
+    z-index:5;
+    position: relative;
+    background: transparent;
+    border: 1px solid #fff;
+    margin:0;
+}
+
+.banner-btn:hover, .banner-btn:focus, .banner-btn:active{
+    // background: #474545;
+    background: $gcolor;
+    border:1px solid #474545;
+    transition: background .5s cubic-bezier(0.39, 0.58, 0.57, 1),border .5s ease-in;
+    transition-property: background, border;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1), ease-in;
+    transition-delay: initial, initial;
+    span{
+        color:#fff;
+    }
+}
+
+.banner-btn span{
+    width:130px;
+    height:38px;
+    font-size: 11px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 30px;
+    background: transparent;
+    color: #fff;
+    font-family:"Open Sans";
+    line-height: 350%;
+    text-align: center;
+}

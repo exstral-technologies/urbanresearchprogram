@@ -11,6 +11,12 @@
 
 //variables
 $roboto:'Roboto', sans-serif;
+$gcolor:rgba(11,172,139, 1.0);
+
+//components
+@import "./components/menubar/hamburger.scss";
+@import "./components/buttons/hover_btn.scss";
+@import "./components/animations/scroll.scss";
 
 /*Home Page*/
 
@@ -21,11 +27,95 @@ $roboto:'Roboto', sans-serif;
 @media (min-width: 768px) and (max-width: 979px) { }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {}
-
+@media (min-width: 480px) and (max-width: 767px) {
+    .jumbo{
+        p{
+            width:60%;
+            margin:60% auto 0 auto;
+        }
+        .jumbo-btn{
+            width:30%;
+            margin:0 auto;
+            padding-top:2em;
+        }
+    }
+}
 /* Landscape phones and down */
 @media (max-width: 480px) {
-
+    .jumbo{
+        p{
+            width:60%;
+            margin:0 auto 0 auto;
+            padding-top:10.5em;
+        }
+        .jumbo-btn{
+            width:60%;
+            margin:0 auto;
+            padding-top:1em;
+        }
+        .jumbo-scroll{
+            width:15%;
+            height:4em;
+            margin:0 auto;
+        }
+    }
+    .hiw{
+        width:100%;
+        height:800px;
+        h3{
+            margin:3em auto 0 auto;
+            width:80%;
+            text-align: left;
+            font-family: Tahoma, Verdana, Segoe, sans-serif;
+            font-style:normal;
+            font-weight:800;
+            size:17px;
+            line-height:31px;
+            color:#444444;
+        }
+        .hiw-img{
+            width:80%;
+            margin:0 auto;
+        }
+        img{
+            width:250px;
+            height:250px;
+            margin-top:1em;
+        }
+    }
+}
+.jumbo{
+    width:100%;
+    height:29.5em;
+    top:0;
+    left:0;
+    background-image:url('http://cdn.wallpapersafari.com/18/13/MXJmHe.jpeg');
+    &:before {
+        content: '';
+        position: absolute;
+        width:100%;
+        height:29.5em;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+        opacity: .6; 
+      }
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #464646;
+    p{
+        position: relative;
+        z-index:8;
+        color:white;
+        text-align: center;
+        font-family: $roboto;
+        font-weight:500;
+        font-size:1.5em;
+    }
 }
 
 /*Support Page*/
