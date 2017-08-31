@@ -131,6 +131,40 @@
   40% {
     transform: rotate(-45deg) translate(0, 0); } }
 
+.footer {
+  width: 100%;
+  height: 12em;
+  background: #fcf8f1; }
+  .footer h5 {
+    color: #888888;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.89;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 0; }
+  .footer .footer-wrapper {
+    text-align: center;
+    width: 100%;
+    height: 5;
+    margin: 0 auto;
+    padding-top: 1em; }
+    .footer .footer-wrapper h3 {
+      color: #585754; }
+    .footer .footer-wrapper h4 {
+      width: 80%;
+      margin: 0 auto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.5;
+      font-family: Poppins, sans-serif;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #888888;
+      text-align: center; }
+
 /*Home Page*/
 /* Large desktop */
 /* Portrait tablet to landscape and desktop */
@@ -153,16 +187,24 @@
   .jumbo .jumbo-btn {
     width: 60%;
     margin: 0 auto;
-    padding-top: 1em; }
+    padding-top: 1em; } }
+  @media (max-width: 480px) and (min-width: 380px) and (max-width: 430px) {
+    .jumbo .jumbo-btn {
+      padding-left: 8%; } }
+  @media (max-width: 480px) and (min-width: 449px) and (max-width: 480px) {
+    .jumbo .jumbo-btn {
+      padding-left: 16%; } }
+
+@media (max-width: 480px) {
   .jumbo .jumbo-scroll {
     width: 15%;
     height: 4em;
     margin: 0 auto; }
   .hiw {
     width: 100%;
-    height: 800px; }
+    height: 65%; }
     .hiw h3 {
-      margin: 3em auto 0 auto;
+      margin: 2em auto 0 auto;
       width: 80%;
       text-align: left;
       font-family: Tahoma, Verdana, Segoe, sans-serif;
@@ -175,8 +217,28 @@
       width: 80%;
       margin: 0 auto; }
     .hiw img {
-      width: 250px;
-      height: 250px;
+      width: 100%;
+      height: 40%;
+      margin-top: 1em; }
+  .hts {
+    width: 100%;
+    height: 100%; }
+    .hts h3 {
+      margin: 2em auto 0 auto;
+      width: 80%;
+      text-align: left;
+      font-family: Tahoma, Verdana, Segoe, sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      size: 17px;
+      line-height: 31px;
+      color: #444444; }
+    .hts .hts-img {
+      width: 80%;
+      margin: 0 auto; }
+    .hts img {
+      width: 100%;
+      height: 40%;
       margin-top: 1em; } }
 
 .jumbo {
