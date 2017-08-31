@@ -1,0 +1,56 @@
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+@import url('https://fonts.googleapis.com/css?family=Signika');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+SC');
+@import url('https://fonts.googleapis.com/css?family=Cormorant');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+//variables
+$roboto:'Roboto', sans-serif;
+
+/*Home Page*/
+
+/* Large desktop */
+@media (min-width: 1200px) {}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+}
+
+/*Support Page*/
+
+/* Large desktop */
+@media (min-width: 1200px) {}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {}
+
+/*Contact Page*/
+
+@media (min-width: 1200px) { }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {}
