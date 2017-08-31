@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Hamburger from '../components/menubar/hamburger';
 import HoverButton from '../components/buttons/hover_btn';
 import Scroll from '../components/animations/scroll';
+import Footer from '../components/footer/footer';
 
 class Home extends Component {
     render() {
@@ -26,6 +27,16 @@ class Home extends Component {
                         <img src="https://cdn.theatlantic.com/assets/media/img/mt/2015/08/RTR6HMO/lead_960.jpg?1438985887" alt="ghetto-us"/>
                     </div>
                 </div>
+                <div className="hts">
+                    <h3>Help Us Develop The Cities Of The Future</h3>
+                    <div className="hts-img">
+                        <img src="https://s-media-cache-ak0.pinimg.com/originals/48/89/e3/4889e383acf3c0855e6c8ac6d6611737.jpg" alt=""/>
+                        <img src="http://im.rediff.com/money/2011/nov/17cities4.jpg" alt=""/>
+                        <img src="http://rpmmultisite.s3-us-west-2.amazonaws.com/wp-content/uploads/sites/97/2015/07/future.png" alt=""/>
+                        <img src="http://i.telegraph.co.uk/multimedia/archive/03126/info_driving-no_ca_3126014b.jpg" alt=""/>
+                    </div>
+                </div>
+                <Footer link="/contactus"/>
             </div>
         );
     }
