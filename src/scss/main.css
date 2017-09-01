@@ -188,9 +188,9 @@
     width: 60%;
     margin: 0 auto;
     padding-top: 1em; } }
-  @media (max-width: 480px) and (min-width: 380px) and (max-width: 430px) {
+  @media (max-width: 480px) and (min-width: 380px) and (max-width: 448px) {
     .jumbo .jumbo-btn {
-      padding-left: 8%; } }
+      padding-left: 13%; } }
   @media (max-width: 480px) and (min-width: 449px) and (max-width: 480px) {
     .jumbo .jumbo-btn {
       padding-left: 16%; } }

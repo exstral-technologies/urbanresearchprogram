@@ -36,6 +36,7 @@ class Home extends Component {
                         <img src="http://i.telegraph.co.uk/multimedia/archive/03126/info_driving-no_ca_3126014b.jpg" alt=""/>
                     </div>
                 </div>
+                
                 <Footer link="/contactus"/>
             </div>
         );
