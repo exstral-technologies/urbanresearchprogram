@@ -8,7 +8,7 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
 .hmbg-menu {
-  position: relative;
+  position: fixed;
   z-index: 10; }
 
 .hamburger1 {
@@ -60,8 +60,8 @@
 
 .banner-btn:hover, .banner-btn:focus, .banner-btn:active {
   background: #0bac8b;
-  border: 1px solid #474545;
-  transition: background 0.5s cubic-bezier(0.39, 0.58, 0.57, 1), border 0.5s ease-in;
+  border: none;
+  transition: background 1.5s cubic-bezier(0.39, 0.58, 0.57, 1), border 0.5s ease-in;
   transition-property: background, border;
   transition-duration: 0.5s, 0.5s;
   transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1), ease-in;
@@ -91,11 +91,11 @@
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   color: #fff;
-  font: normal 400 20px/1 'Josefin Sans', sans-serif;
+  font: normal 400 20px/1 Tahoma, Verdana, Segoe, sans-serif;
   letter-spacing: .1em;
   text-decoration: none;
   transition: opacity .3s;
-  padding-top: -3em; }
+  padding-bottom: 1em; }
 
 .demo div:hover {
   opacity: .5; }
@@ -133,7 +133,7 @@
 
 .footer {
   width: 100%;
-  height: 12em;
+  height: 14em;
   background: #fcf8f1; }
   .footer h5 {
     color: #888888;
@@ -183,7 +183,7 @@
   .jumbo p {
     width: 60%;
     margin: 0 auto 0 auto;
-    padding-top: 10.5em; }
+    padding-top: 60vh; }
   .jumbo .jumbo-btn {
     width: 60%;
     margin: 0 auto;
@@ -200,18 +200,52 @@
     width: 15%;
     height: 4em;
     margin: 0 auto; }
+    .jumbo .jumbo-scroll #section04 {
+      padding-top: -3em; }
   .hiw {
     width: 100%;
-    height: 65%; }
+    height: 65%;
+    background: #CAEBF2; }
     .hiw h3 {
-      margin: 2em auto 0 auto;
+      margin: 0 auto;
+      padding-top: 3em;
       width: 80%;
-      text-align: left;
-      font-family: Tahoma, Verdana, Segoe, sans-serif;
+      text-align: center;
+      font-family: Tahoma, Verdana, 'Segoe', sans-serif;
       font-style: normal;
       font-weight: 800;
       size: 17px;
       line-height: 31px;
+      color: #444444; }
+    .hiw hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      width: 60%;
+      border-top: 3px solid #008F95;
+      border-radius: 25px; }
+    .hiw .hiw-statement {
+      margin: 0 auto;
+      background: #62EDD6;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      width: 100%;
+      text-align: center;
+      font-family: 'Garamond', sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 31px;
+      color: white; }
+    .hiw .hiw-text {
+      margin: 1.5em auto 1em auto;
+      width: 100%;
+      text-align: left;
+      font-family: Tahoma, Verdana, 'Segoe', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      size: 14px;
+      line-height: 21px;
       color: #444444; }
     .hiw .hiw-img {
       width: 80%;
@@ -222,16 +256,19 @@
       margin-top: 1em; }
   .hts {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    background: #CAEBF2; }
     .hts h3 {
-      margin: 2em auto 0 auto;
+      margin: 0 auto;
+      padding-top: 1em;
+      padding-bottom: 0.5em;
       width: 80%;
       text-align: left;
-      font-family: Tahoma, Verdana, Segoe, sans-serif;
+      font-family: Tahoma, Verdana, 'Segoe', sans-serif;
       font-style: normal;
-      font-weight: 800;
-      size: 17px;
-      line-height: 31px;
+      font-weight: 500;
+      size: 14px;
+      line-height: 21px;
       color: #444444; }
     .hts .hts-img {
       width: 80%;
@@ -239,24 +276,30 @@
     .hts img {
       width: 100%;
       height: 40%;
-      margin-top: 1em; } }
+      margin-top: 1em;
+      margin-bottom: 1em; }
+  .supportus {
+    width: 100%;
+    height: 5em;
+    text-align: center;
+    padding-top: 2.5em;
+    background: #6D7993; } }
 
 .jumbo {
   width: 100%;
-  height: 29.5em;
+  height: 100vh;
   top: 0;
   left: 0;
   background-image: url("http://cdn.wallpapersafari.com/18/13/MXJmHe.jpeg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-color: #464646; }
   .jumbo:before {
     content: '';
     position: absolute;
     width: 100%;
-    height: 29.5em;
+    height: 100vh;
     top: 0;
     right: 0;
     bottom: 0;

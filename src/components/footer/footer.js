@@ -7,7 +7,8 @@ const Footer = (props) => {
             <div className="footer-wrapper">
                 <div className="contact">
                     <h3>Contact Us</h3>
-                    <h4>317 S 6th St,Las Vegas, NV 89101</h4>
+                    <h4>Urban Research Program</h4>
+                    <h4>317 S 6th St, Las Vegas, NV 89101</h4>
                     <Link to={props.link}><h4>Contact Form</h4></Link>
                 </div>
             </div>
