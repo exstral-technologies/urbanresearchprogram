@@ -1,5 +1,5 @@
 .hmbg-menu {
-  position: relative;
+  position: fixed;
   z-index: 10; }
 
 .hamburger1 {

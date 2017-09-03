@@ -28,10 +28,11 @@ class Hamburger extends Component{
                     width={200}
                     open={this.state.open}
                     onRequestChange={(open) => this.setState({open})}
+                    containerStyle={{background:"#62EDD6",textDecoration:"none"}}
                 >
-                    <MenuItem onClick={this.handleClose}><Link to="/">Home</Link></MenuItem>
-                    <MenuItem onClick={this.handleClose}><Link to="/contactus">Contact Us</Link></MenuItem>
+                    <Link to="/"><MenuItem onClick={this.handleClose}>Home</MenuItem></Link>
                     <MenuItem onClick={this.handleClose}><Link to="/support">Support</Link></MenuItem>
+                    <MenuItem onClick={this.handleClose}><Link to="/contactus">Contact Us</Link></MenuItem>
                 </Drawer>
             </div>
         );
