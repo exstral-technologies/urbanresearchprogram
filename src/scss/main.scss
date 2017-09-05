@@ -18,6 +18,7 @@ $gcolor:rgba(11,172,139, 1.0);
 @import "./components/buttons/hover_btn.scss";
 @import "./components/animations/scroll.scss";
 @import "./components/footer/footer.scss";
+@import "./components/paper/paper.scss";
 
 /*Home Page*/
 
@@ -158,10 +159,21 @@ $gcolor:rgba(11,172,139, 1.0);
     }
     .supportus{
         width:100%;
-        height: 5em;
+        height: 7em;
         text-align: center;
-        padding-top:2.5em;
+        padding-top:1.5em;
         background:#6D7993;
+        p{
+            color:white;
+            width:80%;
+            margin:0 auto;
+            padding-bottom:1em;
+            font-family: Tahoma, Verdana, 'Segoe', sans-serif;
+            font-style:normal;
+            font-weight:500;
+            size:14px;
+            line-height:21px;
+        }
     }
 }
 .jumbo{
@@ -210,7 +222,30 @@ $gcolor:rgba(11,172,139, 1.0);
 @media (max-width: 767px) {}
 
 /* Landscape phones and down */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .support{
+        header{
+            width:100%;
+            height: 5em;
+            background:black;
+        }
+        .support-wrapper{
+            padding-top:3em;
+            p{
+                color:#444444;
+                width:80%;
+                margin:0 auto;
+                padding-bottom:1em;
+                font-family: Tahoma, Verdana, 'Segoe', sans-serif;
+                font-style:normal;
+                font-weight:500;
+                size:14px;
+                line-height:21px;
+                text-align: center;
+            }
+        }
+    }
+}
 
 /*Contact Page*/
 

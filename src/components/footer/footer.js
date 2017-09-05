@@ -13,7 +13,7 @@ const Footer = (props) => {
                 </div>
             </div>
             <div>
-                <h5>Copyright ©2017 Urban Research Project | All Rights Reserved.</h5>
+                <h5>Copyright ©2017 Urban Research Program | All Rights Reserved.</h5>
             </div>
         </div>
     );
