@@ -34,8 +34,8 @@ class Support extends Component {
                     <FlatBtn label={20} handleClick={()=>{this.clickValue('20')}}/>
                     <FlatBtn label={10} handleClick={()=>{this.clickValue('10')}}/>
                     <FlatBtn label={5} handleClick={()=>{this.clickValue('5')}}/>
-                    <form><input type="text" onChange={this.customValue}/></form>
-                    <p>Contribution: ${this.state.value}</p>
+                    <form className="support-form"><input type="text" onChange={this.customValue} placeholder="custom amount"/></form>
+                    <p className="support-total">Contribution: <div>${this.state.value}</div></p>
                     <PaperWrapper/>
                 </div>
             </div>

@@ -362,7 +362,35 @@
       font-weight: 500;
       size: 14px;
       line-height: 21px;
-      text-align: center; } }
+      text-align: center; }
+  .support input[type="text"] {
+    display: block;
+    border-radius: 10px;
+    margin: 0;
+    width: 30%;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 36px;
+    font-family: sans-serif;
+    font-size: 12px;
+    border: solid 2px #969696; }
+  .support .support-total {
+    color: #444444;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+    font-family: Tahoma, Verdana, 'Segoe', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    size: 14px;
+    line-height: 21px;
+    text-align: center; }
+    .support .support-total div {
+      width: 50%;
+      margin: 0.75em auto 0 auto;
+      border: solid 2px #0bac8b;
+      border-radius: 25px;
+      line-height: 36px; } }
 
 /*Contact Page*/
 /* Portrait tablet to landscape and desktop */
