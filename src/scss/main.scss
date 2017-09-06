@@ -224,6 +224,7 @@ $gcolor:rgba(11,172,139, 1.0);
 /* Landscape phones and down */
 @media (max-width: 480px) {
     .support{
+        height:60em;
         header{
             width:100%;
             height: 5em;
@@ -319,6 +320,10 @@ $gcolor:rgba(11,172,139, 1.0);
         form{
             width:40%;
             margin:0 auto 1em auto;
+        }
+        .pay-btn{
+            width:30%;
+            margin:1em auto 0 auto;
         }
     }
 }
