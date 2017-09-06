@@ -42,6 +42,7 @@ class Home extends Component {
                     </div>
                 </div>
                 <div className="supportus">
+                    <p>Join thousands of American's in supporting this initiative.</p>
                     <HoverButton hbutton="Support Us" link="/support"/>
                 </div>
                 

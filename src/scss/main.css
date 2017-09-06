@@ -133,7 +133,7 @@
 
 .footer {
   width: 100%;
-  height: 14em;
+  height: 15em;
   background: #fcf8f1; }
   .footer h5 {
     color: #888888;
@@ -164,6 +164,21 @@
       text-align: left;
       color: #888888;
       text-align: center; }
+
+.paper {
+  width: 80%;
+  height: 13.8em;
+  margin: 1.5em auto 0 auto;
+  padding-top: 5%; }
+  .paper img {
+    margin: 0 auto;
+    width: 100%;
+    height: 10em; }
+  .paper .paper-cc {
+    margin-top: 5%;
+    height: 1.5em;
+    color: #444;
+    text-align: center; }
 
 /*Home Page*/
 /* Large desktop */
@@ -280,10 +295,20 @@
       margin-bottom: 1em; }
   .supportus {
     width: 100%;
-    height: 5em;
+    height: 7em;
     text-align: center;
-    padding-top: 2.5em;
-    background: #6D7993; } }
+    padding-top: 1.5em;
+    background: #6D7993; }
+    .supportus p {
+      color: white;
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: 1em;
+      font-family: Tahoma, Verdana, 'Segoe', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      size: 14px;
+      line-height: 21px; } }
 
 .jumbo {
   width: 100%;
@@ -320,6 +345,86 @@
 /* Portrait tablet to landscape and desktop */
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .support header {
+    width: 100%;
+    height: 5em;
+    background: black; }
+  .support .support-wrapper {
+    padding-top: 3em; }
+    .support .support-wrapper p {
+      color: #444444;
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: 1em;
+      font-family: Tahoma, Verdana, 'Segoe', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      size: 14px;
+      line-height: 21px;
+      text-align: center; }
+  .support input[type="text"] {
+    display: block;
+    border-radius: 5px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 36px;
+    font-family: sans-serif;
+    font-size: 12px;
+    border: solid 2px #969696; } }
+
+@media (max-width: 480px) and (min-width: 370px) and (max-width: 480px) {
+  .support .support-btn {
+    width: 50%;
+    height: 10em; }
+    .support .support-btn div {
+      width: 100%;
+      height: 3em; } }
+
+@media (max-width: 480px) and (max-width: 370px) {
+  .support .support-btn {
+    width: 60%;
+    height: 10em; }
+    .support .support-btn div {
+      width: 100%;
+      height: 3em; } }
+
+@media (max-width: 480px) {
+  .support .support-btn {
+    margin: 0 auto;
+    text-align: center; }
+    .support .support-btn .btn100 {
+      float: left; }
+    .support .support-btn .btn50 {
+      float: right; }
+    .support .support-btn .btn20 {
+      float: left; }
+    .support .support-btn .btn10 {
+      float: right; }
+    .support .support-btn .btn5 {
+      text-align: center; }
+  .support .support-total {
+    color: #444444;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+    font-family: Tahoma, Verdana, 'Segoe', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    size: 14px;
+    line-height: 21px;
+    text-align: center; }
+    .support .support-total div {
+      width: 50%;
+      margin: 0.75em auto 0 auto;
+      border: solid 2px #0bac8b;
+      border-radius: 25px;
+      line-height: 36px; }
+  .support form {
+    width: 40%;
+    margin: 0 auto 1em auto; } }
+
 /*Contact Page*/
 /* Portrait tablet to landscape and desktop */
 /* Landscape phone to portrait tablet */
