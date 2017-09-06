@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Hamburger from '../components/menubar/hamburger';
 import PaperWrapper from '../components/paper/paper';
 import FlatBtn from '../components/buttons/flatbutton';
+import Checkout from '../components/payment/checkout';
+import Footer from '../components/footer/footer';
 
 class Support extends Component {
     
@@ -41,7 +43,15 @@ class Support extends Component {
                 </div>
                 <form className="support-form"><input type="text" onChange={this.customValue} placeholder="custom amount"/></form>
                 <p className="support-total">Contribution: <div>${this.state.value}</div></p>
+                <div className="pay-btn">
+                    <Checkout
+                    name={'Urban Research Program'}
+                    description={'Contribution'}
+                    amount={this.state.value}
+                    />
+                </div>
                 <PaperWrapper/>
+                <Footer link="/contactus"/>
             </div>
         );
     }

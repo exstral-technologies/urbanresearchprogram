@@ -4,6 +4,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Home from './HOCs/Home';
 import Support from './HOCs/Support';
 import Contact from './HOCs/Contact';
+import ScrollToTop from './components/scroll/scrolltotop';
 
 //css
 import './scss/main.css';
@@ -15,11 +16,13 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <Switch>
-          <Route exact path="/" component={Home}></Route>
-          <Route exact path="/support" component={Support}></Route>
-          <Route path="/contactus" component={Contact}></Route>
-        </Switch>
+        <ScrollToTop>
+          <Switch>
+            <Route exact path="/" component={Home}></Route>
+            <Route exact path="/support" component={Support}></Route>
+            <Route path="/contactus" component={Contact}></Route>
+          </Switch>
+        </ScrollToTop>
       </MuiThemeProvider>
     );
   }
