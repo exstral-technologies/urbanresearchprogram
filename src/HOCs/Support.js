@@ -28,16 +28,20 @@ class Support extends Component {
                 <div className="support-wrapper">
                     <p>Thank You For The Support!</p>
                 </div>
-                <div>
-                    <FlatBtn label={100} handleClick={()=>{this.clickValue('100')}}/>
-                    <FlatBtn label={50} handleClick={()=>{this.clickValue('50')}}/>
-                    <FlatBtn label={20} handleClick={()=>{this.clickValue('20')}}/>
-                    <FlatBtn label={10} handleClick={()=>{this.clickValue('10')}}/>
-                    <FlatBtn label={5} handleClick={()=>{this.clickValue('5')}}/>
-                    <form className="support-form"><input type="text" onChange={this.customValue} placeholder="custom amount"/></form>
-                    <p className="support-total">Contribution: <div>${this.state.value}</div></p>
-                    <PaperWrapper/>
+                <div className="support-btn">
+                    <div>
+                        <FlatBtn label={'$100'} css="btn100" handleClick={()=>{this.clickValue('100')}}/>
+                        <FlatBtn label={'$50'} css="btn50" handleClick={()=>{this.clickValue('50')}}/>
+                    </div>
+                    <div>
+                        <FlatBtn label={'$20'} css="btn20" handleClick={()=>{this.clickValue('20')}}/>
+                        <FlatBtn label={'$10'} css="btn10" handleClick={()=>{this.clickValue('10')}}/>
+                    </div>
+                    <FlatBtn label={'$5'} css="btn5" handleClick={()=>{this.clickValue('5')}}/>
                 </div>
+                <form className="support-form"><input type="text" onChange={this.customValue} placeholder="custom amount"/></form>
+                <p className="support-total">Contribution: <div>${this.state.value}</div></p>
+                <PaperWrapper/>
             </div>
         );
     }

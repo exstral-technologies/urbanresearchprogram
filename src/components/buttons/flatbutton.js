@@ -10,6 +10,7 @@ const FlatBtn = (props) =>{
                     label={props.label}
                     type="submit"
                     onClick={props.handleClick}
+                    className={props.css}
                 >
                 </FlatButton>
 
